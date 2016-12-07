@@ -1,0 +1,16 @@
+[env]
+debug = true
+
+[database]
+adapter  = Mysql
+host     = localhost
+username = root
+password = 123456
+dbname   = alconService
+
+[application]
+modelsDir     = ../serv/
+migrationsDir = ../migrations/
+viewsDir      = ../views/
+baseUri       = /LaborService/
+logsDir       = public/logs/

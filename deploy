@@ -1,0 +1,10 @@
+#!/bin/bash
+# 部署运行 `sh deploy`
+# @farwish
+
+if test -f composer.lock; then
+    composer update --prefer-dist --no-dev
+else
+    composer install --prefer-dist --no-dev
+    cp ./config/config.ini.default ./config/config.ini
+fi

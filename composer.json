@@ -1,0 +1,25 @@
+{
+    "name": "farwish/alconService",
+    "description": "alcon service",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "farwish",
+            "email": "farwish@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "ext-phalcon": "~2.0.13",
+        "ext-yar": "~1.2.5",
+        "farwish/alcon": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/farwish/alcon.git"
+        }
+    ]
+}
