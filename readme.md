@@ -39,3 +39,5 @@ server {
 
 > Usage Example: echo \Labor\Serv\Bbs\Question::get('http://127.0.0.1:8090/bbs/question')->ask('test');  
 
+> `你可以将地址放入配置文件，在自己客户端中封装地址调用`  
+

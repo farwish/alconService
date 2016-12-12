@@ -1,10 +1,8 @@
 <?php
 
-use Phalcon\Mvc\Micro;
-
-error_reporting(E_ALL);
-
 define('APP_PATH', realpath('..'));
+
+date_default_timezone_set('PRC');
 
 try {
 
@@ -50,8 +48,12 @@ try {
         $serv = $router->getActionName();
         
         if ( in_array( $serv, $accessable ) ) {
-            $yar = new Yar_Server( new $servable[$module][$serv] );
-            $yar->handle();
+            try {
+                $yar = new Yar_Server( new $servable[$module][$serv] );
+                $yar->handle();
+            } catch (\Exception $e) {
+                echo $e->getMessage();
+            }
         } else {
             $notice = "Serv: {$serv} not exists!";
         }
