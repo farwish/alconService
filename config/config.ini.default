@@ -13,5 +13,5 @@ charset  = utf8
 modelsDir     = ../serv/
 migrationsDir = ../migrations/
 viewsDir      = ../views/
-baseUri       = /LaborService/
+baseUri       = /alconService/
 logsDir       = public/logs/

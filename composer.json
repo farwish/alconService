@@ -2,7 +2,7 @@
     "name": "farwish/alconService",
     "description": "alcon service",
     "type": "project",
-    "license": "MIT",
+    "license": "Apache",
     "authors": [
         {
             "name": "farwish",
@@ -12,8 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
-        "ext-phalcon": "~2.0.13",
-        "ext-yar": "~1.2.5",
+        "ext-phalcon": "~3.0.2",
+        "ext-yar": "~2.0.1",
         "farwish/alcon": "dev-master"
     },
     "repositories": [
